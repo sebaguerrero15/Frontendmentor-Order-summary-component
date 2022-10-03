@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*,
+*::before,
+*::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    place-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card{
+    background-color: white;
+    color: hsl(223, 47%, 23%);
+    width: 320px;
+    height: 560px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 35px auto;
+}
+
+.imagen{
+    max-width: 100%;
+}
+
+.descriptioncard .title{
+    text-align: center;
+    font-weight: 900;  
+    font-size: 1.4em;
+    margin: 24px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.descriptioncard .description{
+    text-align: center;
+    line-height: 23px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 32px;
+    padding: 0 25px;
+    
+}
+
+.price{
+    display: flex;
+    margin: 0 auto;
+    background-color: hsl(225, 100%, 98%);
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 275px;
+    height: 75px;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.icono{
+    text-align: center;
+    height: 45px;
+    padding: 0;
+}
+
+.price h4{
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.price p{
+    font-size: 0.8em;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.price a{
+    color: hsl(245, 75%, 52%);
+    font-size: 0.8em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.price a:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+
+.btn{
+    background-color:hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 0.9em;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 1px 10px 8px 3px hsl(225, 100%, 94%);
+    width: 277px;
+    height: 48px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel{
+    text-align: center;
+}
+
+.cancel a{
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+/* ---------------FOOTER ----------*/
+.attribution{ 
+    font-size: 11px; text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* ------------responsive------------- */
+@media (min-width:767px){
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .card{
+        width: 410px;
+        height: 650px;
+        margin-bottom: 50px;
+        margin: 100px auto;
+    }
+
+    .descriptioncard .title{
+        font-size: 1.6em;
+        margin: 48px 0 24px;
+}
+
+.descriptioncard .description{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.price{
+    width: 320px;
+    margin-bottom: 25px;
+    
+}
+
+.price h4{
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.price p{
+    font-size: 1em;
+    color: hsl(224, 23%, 55%);
+}
+
+.price a{
+    margin-left: 60px;
+}
+
+.btn{
+    width: 354px;
+    height: 48px;
+    margin-bottom: 32px;
+}
+
